@@ -20,9 +20,13 @@ public class CollectionConcept {
 		System.out.println(products);
 		//Iterative concept in order to Print all the elements one after the other
 		
-		Iterator<productDetails> prodIter = products.iterator();
+		/*Iterator<productDetails> prodIter = products.iterator();
 		while(prodIter.hasNext()){ //has Next once it reaches end of the list it terminates
 			 productDetails prod = prodIter.next();//it gives next element and moves forward 
+			System.out.println(prod);
+		} */
+		for(productDetails prod : products) { // Instead of using iterator from the latest version java 
+			                                  //we got loop were its easy to iterate
 			System.out.println(prod);
 		}
 
